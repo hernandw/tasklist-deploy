@@ -12,7 +12,8 @@ const TaskForm = () => {
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(body),
       });
-      window.location = "/";
+      alert("Usuario agregado con éxito");
+      window.location = "/"
     } catch (error) {
       console.log(error)
     }
