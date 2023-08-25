@@ -12,7 +12,7 @@ const TaskForm = () => {
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(body),
       });
-      window.location = "/"
+      window.location = "https://taskliste.onrender.com/";
     } catch (error) {
       console.log(error)
     }
