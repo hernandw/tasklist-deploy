@@ -10,7 +10,7 @@ router.get('/', (req, res) => {
 });
 
 router.get('/ping', async(req, res) => {
-    const consulta = await poll.query('SELECT NOW()')
+    const consulta = await pool.query('SELECT NOW()')
     res.json(consulta.rows)
 })
 
