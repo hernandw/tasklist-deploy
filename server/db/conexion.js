@@ -7,16 +7,16 @@ require('dotenv').config();
     database: process.env.DB_DATABASE,
     password: process.env.DB_PASSWORD,
     allowExitOnIdle: true
-}) */
-
+})
+ */
 
 const pool = new Pool({
-    connectionString: process.env.DATABASE_URL
+    
+    connectionString: process.env.DATABASE_URL,
+    ssl: true
 })
 
-/* const pool = new Pool({
-    connectionString: process.env.DATABASE_URL
-}) */
+
 
 const getData = async () => {
     const consulta = 'SELECT NOW()';
