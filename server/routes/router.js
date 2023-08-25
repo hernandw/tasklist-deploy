@@ -6,7 +6,7 @@ const pool = require('../db/conexion')
 
 //routes
 router.get('/', (req, res) => {
-    res.send('Hello World en Express desde Router');
+    res.send('Hello World en Express desde Render');
 });
 
 //Crear lista de tareas
