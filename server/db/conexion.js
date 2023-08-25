@@ -32,5 +32,5 @@ const pool = new Pool({
     console.log(rows)
 }
  */
-getData()
+/* getData() */
 module.exports = pool
