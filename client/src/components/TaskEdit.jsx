@@ -8,7 +8,7 @@ const TaskEdit = ({ task }) => {
     e.preventDefault();
     try {
       const body = { description };
-      await fetch(`http://localhost:3000/${task.id}`, {
+      await fetch(`https://backend-tasklist.onrender.com/${task.id}`, {
         method: "PUT",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(body),

@@ -7,7 +7,7 @@ const TaskForm = () => {
     e.preventDefault()
     try {
       const body = { description }
-      fetch("http://localhost:3000/tasks", {
+      fetch("https://backend-tasklist.onrender.com/tasks", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(body),
