@@ -9,6 +9,11 @@ router.get('/', (req, res) => {
     res.send('Hello World en Express desde Render');
 });
 
+router.get('/ping', async(req, res) => {
+    const consulta = await poll.query('SELECT NOW()')
+    res.json(consulta.rows)
+})
+
 //Crear lista de tareas
 router.post('/tasks', async(req, res) => {
 try {
